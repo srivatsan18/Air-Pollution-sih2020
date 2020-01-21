@@ -1,0 +1,233 @@
+GROUP                  = INVENTORYMETADATA
+  GROUPTYPE            = MASTERGROUP
+
+  GROUP                  = ECSDATAGRANULE
+
+    OBJECT                 = LOCALGRANULEID
+      NUM_VAL              = 1
+      VALUE                = "MOP03J-20190310-L3V5.4.3.he5"
+    END_OBJECT             = LOCALGRANULEID
+
+    OBJECT                 = PRODUCTIONDATETIME
+      NUM_VAL              = 1
+      VALUE                = "2019-05-15T02:11:40.000Z"
+    END_OBJECT             = PRODUCTIONDATETIME
+
+  END_GROUP              = ECSDATAGRANULE
+
+  GROUP                  = MEASUREDPARAMETER
+
+    OBJECT                 = MEASUREDPARAMETERCONTAINER
+      CLASS                = "1"
+
+      OBJECT                 = PARAMETERNAME
+        CLASS                = "1"
+        NUM_VAL              = 1
+        VALUE                = "Carbon Monoxide"
+      END_OBJECT             = PARAMETERNAME
+
+      GROUP                  = QAFLAGS
+        CLASS                = "1"
+
+        OBJECT                 = AUTOMATICQUALITYFLAG
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = "Passed"
+        END_OBJECT             = AUTOMATICQUALITYFLAG
+
+        OBJECT                 = AUTOMATICQUALITYFLAGEXPLANATION
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = "Process Terminated Normally"
+        END_OBJECT             = AUTOMATICQUALITYFLAGEXPLANATION
+
+        OBJECT                 = OPERATIONALQUALITYFLAG
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = "Passed"
+        END_OBJECT             = OPERATIONALQUALITYFLAG
+
+        OBJECT                 = OPERATIONALQUALITYFLAGEXPLANATION
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = "Process Terminated Normally"
+        END_OBJECT             = OPERATIONALQUALITYFLAGEXPLANATION
+
+      END_GROUP              = QAFLAGS
+
+      GROUP                  = QASTATS
+        CLASS                = "1"
+
+        OBJECT                 = QAPERCENTMISSINGDATA
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = 3
+        END_OBJECT             = QAPERCENTMISSINGDATA
+
+        OBJECT                 = QAPERCENTOUTOFBOUNDSDATA
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = 0
+        END_OBJECT             = QAPERCENTOUTOFBOUNDSDATA
+
+        OBJECT                 = QAPERCENTCLOUDCOVER
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = 0
+        END_OBJECT             = QAPERCENTCLOUDCOVER
+
+      END_GROUP              = QASTATS
+
+    END_OBJECT             = MEASUREDPARAMETERCONTAINER
+
+  END_GROUP              = MEASUREDPARAMETER
+
+  GROUP                  = COLLECTIONDESCRIPTIONCLASS
+
+    OBJECT                 = SHORTNAME
+      NUM_VAL              = 1
+      VALUE                = "MOP03J"
+    END_OBJECT             = SHORTNAME
+
+    OBJECT                 = VERSIONID
+      NUM_VAL              = 1
+      VALUE                = 7
+    END_OBJECT             = VERSIONID
+
+  END_GROUP              = COLLECTIONDESCRIPTIONCLASS
+
+  GROUP                  = INPUTGRANULE
+
+    OBJECT                 = INPUTPOINTER
+      NUM_VAL              = 101
+      VALUE                = (
+          "/MOPITT/V7J/Staging/L3/20190310/M2/MOP02J-20190310-L2V17.9.3.he5")
+    END_OBJECT             = INPUTPOINTER
+
+  END_GROUP              = INPUTGRANULE
+
+  GROUP                  = SPATIALDOMAINCONTAINER
+
+    GROUP                  = GRANULELOCALITY
+
+      OBJECT                 = LOCALITYVALUE
+        NUM_VAL              = 1
+        VALUE                = "Global"
+      END_OBJECT             = LOCALITYVALUE
+
+    END_GROUP              = GRANULELOCALITY
+
+    GROUP                  = HORIZONTALSPATIALDOMAINCONTAINER
+
+      GROUP                  = BOUNDINGRECTANGLE
+
+        OBJECT                 = WESTBOUNDINGCOORDINATE
+          NUM_VAL              = 1
+          VALUE                = -180.0
+        END_OBJECT             = WESTBOUNDINGCOORDINATE
+
+        OBJECT                 = NORTHBOUNDINGCOORDINATE
+          NUM_VAL              = 1
+          VALUE                = 90.0
+        END_OBJECT             = NORTHBOUNDINGCOORDINATE
+
+        OBJECT                 = EASTBOUNDINGCOORDINATE
+          NUM_VAL              = 1
+          VALUE                = 180.0
+        END_OBJECT             = EASTBOUNDINGCOORDINATE
+
+        OBJECT                 = SOUTHBOUNDINGCOORDINATE
+          NUM_VAL              = 1
+          VALUE                = -90.0
+        END_OBJECT             = SOUTHBOUNDINGCOORDINATE
+
+      END_GROUP              = BOUNDINGRECTANGLE
+
+    END_GROUP              = HORIZONTALSPATIALDOMAINCONTAINER
+
+  END_GROUP              = SPATIALDOMAINCONTAINER
+
+  GROUP                  = RANGEDATETIME
+
+    OBJECT                 = RANGEBEGINNINGDATE
+      NUM_VAL              = 1
+      VALUE                = "2019-03-10"
+    END_OBJECT             = RANGEBEGINNINGDATE
+
+    OBJECT                 = RANGEBEGINNINGTIME
+      NUM_VAL              = 1
+      VALUE                = "00:00:12.603"
+    END_OBJECT             = RANGEBEGINNINGTIME
+
+    OBJECT                 = RANGEENDINGDATE
+      NUM_VAL              = 1
+      VALUE                = "2019-03-10"
+    END_OBJECT             = RANGEENDINGDATE
+
+    OBJECT                 = RANGEENDINGTIME
+      NUM_VAL              = 1
+      VALUE                = "23:56:30.259"
+    END_OBJECT             = RANGEENDINGTIME
+
+  END_GROUP              = RANGEDATETIME
+
+  GROUP                  = PGEVERSIONCLASS
+
+    OBJECT                 = PGEVERSION
+      NUM_VAL              = 1
+      VALUE                = "5.4.3"
+    END_OBJECT             = PGEVERSION
+
+  END_GROUP              = PGEVERSIONCLASS
+
+  GROUP                  = ADDITIONALATTRIBUTES
+
+    OBJECT                 = ADDITIONALATTRIBUTESCONTAINER
+      CLASS                = "1"
+
+      OBJECT                 = ADDITIONALATTRIBUTENAME
+        CLASS                = "1"
+        NUM_VAL              = 1
+        VALUE                = "identifier_product_doi"
+      END_OBJECT             = ADDITIONALATTRIBUTENAME
+
+      GROUP                  = INFORMATIONCONTENT
+        CLASS                = "1"
+
+        OBJECT                 = PARAMETERVALUE
+          NUM_VAL              = 1
+          CLASS                = "1"
+          VALUE                = "10.5067/TERRA/MOPITT/MOP03J_L3.007"
+        END_OBJECT             = PARAMETERVALUE
+
+      END_GROUP              = INFORMATIONCONTENT
+
+    END_OBJECT             = ADDITIONALATTRIBUTESCONTAINER
+
+    OBJECT                 = ADDITIONALATTRIBUTESCONTAINER
+      CLASS                = "2"
+
+      OBJECT                 = ADDITIONALATTRIBUTENAME
+        CLASS                = "2"
+        NUM_VAL              = 1
+        VALUE                = "identifier_product_doi_authority"
+      END_OBJECT             = ADDITIONALATTRIBUTENAME
+
+      GROUP                  = INFORMATIONCONTENT
+        CLASS                = "2"
+
+        OBJECT                 = PARAMETERVALUE
+          NUM_VAL              = 1
+          CLASS                = "2"
+          VALUE                = "http://dx.doi.org"
+        END_OBJECT             = PARAMETERVALUE
+
+      END_GROUP              = INFORMATIONCONTENT
+
+    END_OBJECT             = ADDITIONALATTRIBUTESCONTAINER
+
+  END_GROUP              = ADDITIONALATTRIBUTES
+
+END_GROUP=INVENTORYMETADATA
+END
+
